@@ -1,0 +1,45 @@
+import java.util.*;
+class gf
+{
+    void display()
+    {
+        System.out.println("i am gf");
+    }
+}
+class father extends gf{
+     void display2()
+    {
+        System.out.println("i am father");
+    }
+}
+class son extends father{
+     void display3()
+    {
+        System.out.println("i am son");
+    }
+}
+class gson extends son{
+    void display4()
+    {
+        System.out.println("i am grand son");
+    }
+}
+class gdaughter extends son{
+     void display5()
+    {
+     System.out.println("i am grand daughter");
+    }
+}
+class main
+{
+    public static void main(String[]args)
+    {
+        gson obj=new gson();
+        gdaughter obj2=new gdaughter();
+        obj.display();
+        obj.display2();
+        obj.display3();
+        obj.display4();
+        obj2.display5();
+    }
+}
